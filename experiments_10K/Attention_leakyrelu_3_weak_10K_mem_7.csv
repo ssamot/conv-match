@@ -1,0 +1,23 @@
+Attention_leakyrelu_3_weak_10K_mem
+RNN / Embed / Sent / Query / Hidden = <class 'keras.layers.recurrent.SimpleRNN'>, 128, 128, 128, 128
+Weak Supervision 10K Memory
+1.00000 
+0.99400 
+0.95800 
+1.00000 
+0.99700 
+1.00000 
+0.99800 
+0.99600 
+1.00000 
+0.99600 
+0.99900 
+1.00000 
+1.00000 
+0.99600 
+1.00000 
+0.48900 
+0.99800 
+0.99700 
+0.87500 
+1.00000 
