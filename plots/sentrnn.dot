@@ -1,0 +1,13 @@
+digraph G {
+node [shape=record];
+139714226323088 [label="Embedding
+|{input:|output:}|{n_words|{(n_words,n_neurons)}}"];
+139714079147216 [label="Dropout"];
+139714002209424 [label="Convolution1D (n_filters, n_mns)
+|{input:|output:}|{{n_words,n_neurons}|{n_words,n_filters}}"];
+139713992849488 [label="MaxPooling1D (n_mns)
+|{input:|output:}|{{(n_words, n_filters)}|{(n_memories, n_filters)}}"];
+139714226323088 -> 139714079147216;
+139714079147216 -> 139714002209424;
+139714002209424 -> 139713992849488;
+}

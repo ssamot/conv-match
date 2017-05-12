@@ -1,0 +1,13 @@
+digraph G {
+node [shape=record];
+140290707933456 [label="AttentionMerge
+|{input:|output:}|{{[Data Encoder,Question Encoder]}|{[n_memories,n_neurons]}}"];
+140290730605840 [label="TimeDistributedDense
+|{input:|output:}|{{n_memories, n_neurons}|{n_memories, n_neurons}}"];
+140290730605904 [label="AttentionRecurrent (Hop 1)
+|{input:|output:}|{{n_memories, n_neurons}|{n_neurons}}"];
+
+140290707933456 -> 140290730605840;
+140290730605840 -> 140290730605904;
+
+}
