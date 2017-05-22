@@ -1,7 +1,7 @@
 __author__ = 'ssamot'
 
 
-experiment_scores_path = "./experiments/"
+experiment_scores_path = "./experiments_10K/"
 task_path = "tasks_1-20_v1-2/en/"
 tenK_task_path = "tasks_1-20_v1-2/en-10k/"
 

@@ -367,7 +367,7 @@ if __name__=="__main__":
             core_data = 1.0 - np.array(core_data, dtype = np.float)
             core_data = core_data* 100
 
-            std =  np.std(core_data, axis = 0)
+            std =  np.std(core_data, axis = 0, ddof = 1)
             mn  =  np.mean(core_data, axis = 0)
             mn_overall  =  np.mean(core_data, axis = 1)
             lower = np.greater(core_data, 5)
@@ -384,8 +384,8 @@ if __name__=="__main__":
                 column.append(line)
 
 
-            column.append("%.1f pm %.1f" %(float(mn_overall.mean()), float(mn_overall.std())))
-            column.append("%.1f pm %.1f" %(float(lower.mean()), float(lower.std())))
+            column.append("%.1f pm %.1f" %(float(mn_overall.mean()), float(mn_overall.std(ddof = 1))))
+            column.append("%.1f pm %.1f" %(float(lower.mean()), float(lower.std(ddof = 1))))
             columns.append(column)
 
 
